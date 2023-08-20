@@ -1,0 +1,73 @@
+:root {
+  --mainColor: #e68285;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.barBtn {
+  cursor: pointer;
+}
+
+.sideBarInner ul li a {
+  transition: color 500ms;
+}
+.sideBarInner ul li:hover a {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+#home {
+  height: 700px;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)),
+    url(../imgs/events-heavenly-header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#home h1 {
+  font-size: 50px;
+}
+
+#signers .cardItem {
+  width: 800px;
+}
+
+#signers .cardItem h5{
+  background-color: var(--mainColor);
+}
+
+#signers .cardItem p{
+  background-color: #cdcdcc;
+}
+
+#signers .cardItem p:not(#signers .cardItem p:first-of-type){
+  display: none;
+}
+
+#events{
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
+    url(../imgs/invitation-2508607__340.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+#contact .socialMedia .socialItem {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 500ms;
+}
+#contact .socialMedia .socialItem:hover{
+background-color: var(--mainColor);
+color: white;
+}
+#contact textarea{
+  max-height: 300px;
+}
+#contact .submit button{
+  background-color: var(--mainColor);
+}
