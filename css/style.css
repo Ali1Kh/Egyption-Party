@@ -1,23 +1,28 @@
 :root {
   --mainColor: #e68285;
 }
-
 a {
   color: white;
   text-decoration: none;
 }
-
+/*! Side Bar */
 .barBtn {
   cursor: pointer;
 }
-
+.barBtn i{
+ transition: all 400ms;
+}
 .sideBarInner ul li a {
   transition: color 500ms;
 }
 .sideBarInner ul li:hover a {
   color: rgba(255, 0, 0, 0.5);
 }
-
+.sideBar .iconImage{
+  width: 35px;
+  height: 35px;
+}
+/*!Home */
 #home {
   height: 700px;
   background-image: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)),
@@ -28,7 +33,7 @@ a {
 #home h1 {
   font-size: 50px;
 }
-
+/*!Signers Section */
 #signers .cardItem {
   width: 800px;
 }
@@ -40,18 +45,16 @@ a {
 #signers .cardItem p{
   background-color: #cdcdcc;
 }
-
 #signers .cardItem p:not(#signers .cardItem p:first-of-type){
   display: none;
 }
-
+/* !Events */
 #events{
   background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
     url(../imgs/invitation-2508607__340.jpg);
   background-position: center center;
   background-size: cover;
 }
-
 #contact .socialMedia .socialItem {
   width: 40px;
   height: 40px;

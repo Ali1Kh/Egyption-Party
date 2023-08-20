@@ -5,13 +5,15 @@ $(".sideBar .barBtn").click(() => {
   if ($(".sideBar").css("left") == "0px") {
     $(".sideBar").animate({ left: -innerWidth }, 800);
     $(".sideBar .barBtn i").addClass("fa-bars");
-    $(".sideBar .barBtn i").removeClass("fa-xmark")
+    $(".sideBar .barBtn i").removeClass("fa-xmark");
   } else {
     $(".sideBar").animate({ left: "0px" }, 800);
     $(".sideBar .barBtn i").addClass("fa-xmark");
-    $(".sideBar .barBtn i").removeClass("fa-bars")
+    $(".sideBar .barBtn i").removeClass("fa-bars");
   }
 });
+// ?NavBar
+
 //! Signers Section
 $("#signers .cardItem h5").click((e) => {
   let target = $(e.target).next("p");
@@ -39,9 +41,8 @@ function countTime() {
 $("#contact textarea").keyup(() => {
   let inputLength = $("#contact textarea").val().length;
   if (inputLength <= 100) {
-    $("#contact .charchters .length").html(100-inputLength);
-  }else{
-    $("#contact textarea").
-    $("#contact .charchters .length").html(0);
+    $("#contact .charchters .length").html(100 - inputLength);
+  } else {
+    $("#contact textarea").$("#contact .charchters .length").html(0);
   }
 });
