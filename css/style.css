@@ -37,11 +37,10 @@ a {
 #signers .cardItem {
   width: 800px;
 }
-
 #signers .cardItem h5{
   background-color: var(--mainColor);
+  cursor: pointer;
 }
-
 #signers .cardItem p{
   background-color: #cdcdcc;
 }

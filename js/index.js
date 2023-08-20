@@ -12,14 +12,17 @@ $(".sideBar .barBtn").click(() => {
     $(".sideBar .barBtn i").removeClass("fa-bars");
   }
 });
-// ?NavBar
-
+// ?Smoothing
+$(".sideBarInner ul li a").click((e)=>{
+  let sectionTop = $($(e.target).attr("href")).offset().top;
+  $("html,body").animate({scrollTop:sectionTop},1000)
+});
 //! Signers Section
 $("#signers .cardItem h5").click((e) => {
   let target = $(e.target).next("p");
   console.log(target);
-  $(target).slideToggle(400);
-  $(target).siblings("p").slideUp(400);
+  $(target).slideToggle(600);
+  $(target).siblings("p").slideUp(600);
 });
 //! Event Section
 let eventDate, today, remainingDays, hours, minutes, seconds;
